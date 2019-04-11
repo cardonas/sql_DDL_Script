@@ -1,8 +1,7 @@
 Apple,Trees,China,apples.txt,redapples.png
-Banana,Trees,Papua New Guinea,bananas.txt,bananas.png
-Pear,Trees,Western Mediterranean Area,pears.txt,pears.png
-Blood Orange,Trees,Sicily,bloodoranges.txt,bloodoranges.png
-Kiwifruit,Vines,China,kiwi.txt,kiwis.png
+Apple       ,Trees ,Western Mediterranean Area,pears.txt       ,pears.png
+Apple       ,Trees ,Sicily                    ,bloodoranges.txt,bloodoranges.png
+Apple       ,Vines ,China                     ,kiwi.txt        ,kiwis.png
 Grape,Stalks,Middle East,grapes.txt,purplegrapes.png
 Raspberries,Shrubs,Raspberia,raspberry.txt,raspberries.png
 Papaya,Trees,Tropical Americas,papya.txt,papaya.png
