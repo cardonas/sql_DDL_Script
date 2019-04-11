@@ -2,7 +2,7 @@ import csv
 
 # filehandler = open("CustomerCallCenterDDl.sql", "w")
 
-dataDictionary = open("/Users/steven/Desktop/fruitlist.csv", "r")
+dataDictionary = open("fruitlist.csv", "r")
 finalDataDict = csv.reader(dataDictionary, delimiter=',')
 for row in finalDataDict:
     list1 = row
