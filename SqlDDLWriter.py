@@ -2,28 +2,30 @@ import csv
 
 # sqlfile = open("Customer_Call_Center_DDL.sql", "a")
 # filehandler = open("CustomerCallCenterDDl.sql", "w")
-print("\nDROP DATABASE IF EXISTS call_center"
-      "\nCREATE DATABASE  call_center")
-dataDictionary = open("fruitlist.csv", "r")
+print("DROP DATABASE IF EXISTS call_center;"
+      "\nCREATE DATABASE  call_center;")
+
+dataDictionary = open("tablelist.csv", "r")
 finalDataDict = csv.reader(dataDictionary, delimiter=',')
 tableNameCheck = ""
 tableList = []
-
 for row in finalDataDict:
     list1 = row
     tableName = list1[0]
-    fieldName = list1[1]
-    sqlType = list1[1]
-    isNull = list1[2]
-    isPrimaryKey = list1[3]
-    autoIncrement = list1[4]
-    comment = list1[4]
+    field1 = list1[1]
+    field2 = list1[2]
+    field3 = list1[3]
+    field4 = list1[4]
+    field5 = list1[5]
+
     if tableNameCheck != tableName:
+        print("\t", field1, field2, field3, field4, field5)
         tableList.append(tableName)
-        print("}")
+        print("};")
         print()
         print("CREATE TABLE ", tableName, " {")
-    print("\t", fieldName, ", ", sqlType, ", ", isNull, ", ", isPrimaryKey, ", ", autoIncrement, ", ", comment)
+
+    print("\t", field1, field2, field3, field4, field5, ",")
     tableNameCheck = tableName
 
 dataDictionary.close()
@@ -31,15 +33,15 @@ dataDictionary.close()
 # TODO: Get Insert statements working
 #
 # exampleData = open("fruitlist.csv", "r")
-# data = csv.reader(exampleData, delimiter=",")
-# dataList = list(data)
+# dataExample = csv.reader(exampleData, delimiter=",")
+# dataList = list(dataExample)
 # index = 0
-# # dataFormat = "(" + data + ")"
+# dataFormat = "(" + data + ")"
 # for table in tableList:
 #     print("INSERT INTO ", table, "VALUES")
-#     if index == len(list(data)):
-#         for data1 in dataList:
-#             dataFormat = "(" + data1[index] + ")"
-#             print(dataFormat).strip('\n')
-#             index += 1
+#     for data in dataList:
+#         print(data[index])
+# dataFormat = "(" + data[index] + ")"
+# print(dataFormat).strip('\n')
+# index += 1
 #
