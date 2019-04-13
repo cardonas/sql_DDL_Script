@@ -73,7 +73,8 @@ create table service_agencies(
 		foreign key (zip_code)
         references zip_codes(zip_code)
 )comment 'Represents service agencies that get referred';
-*/
+
+/*
 insert into calls values
 (1,'2017-02-01','2:19:00','7:46:00','morbi non lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non',TRUE,TRUE,TRUE,1,1,6)
 ,(2,'5-1-2018','1:20:00','9:58:00','proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue',TRUE,TRUE,TRUE,2,2,6)
@@ -125,7 +126,61 @@ insert into calls values
 ,(48,'3-24-2016','5:36:00','1:32:00','eu est congue elementum in hac habitasse platea dictumst morbi',TRUE,FALSE,TRUE,48,48,6)
 ,(49,'5-2-2016','15:45:00','21:57:00','commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id',FALSE,FALSE,TRUE,49,49,2)
 ,(50,'10-1-2016','11:34:00','11:58:00','ligula nec sem duis aliquam convallis nunc proin at turpis a',FALSE,FALSE,TRUE,50,50,3)
-;
+;*/
+
+insert into counselor values
+	(1,'Talbot','Walsh','employee')
+	,(2,'Angela','Sprull','employee')
+	,(3,'Darla','Chestnutt','volunteer')
+	,(4,'Dusty','Leonida','employee')
+	,(5,'Shana','Bullus','volunteer')
+	,(6,'Fields','Heikkinen','employee')
+	,(7,'Charleen','Willan','employee')
+	,(8,'Aurelia','Hellis','volunteer')
+	,(9,'Rebekah','Firby','employee')
+	,(10,'Ingmar','Corzon','volunteer')
+	,(11,'Miof mela','Pottell','employee')
+	,(12,'Judd','MacIntyre','employee')
+	,(13,'Whit','Tomei','employee')
+	,(14,'Erina','Gawkroge','employee')
+	,(15,'Kaylee','Baddiley','volunteer')
+	,(16,'Glyn','Walklott','employee')
+	,(17,'Lionello','Granleese','volunteer')
+	,(18,'Addy','Hallick','volunteer')
+	,(19,'Pernell','Thornbarrow','employee')
+	,(20,'Scarlet','Finlator','volunteer')
+	,(21,'Lisette','Payne','employee')
+	,(22,'Martynne','Allington','volunteer')
+	,(23,'Rossy','Sibille','employee')
+	,(24,'Daron','Franzoli','volunteer')
+	,(25,'Mable','Priddey','employee')
+	,(26,'Debee','Sewter','volunteer')
+	,(27,'Romain','Hunnable','employee')
+	,(28,'Danie','Petrushanko','volunteer')
+	,(29,'Sal','Medler','volunteer')
+	,(30,'Shell','Girling','volunteer')
+	,(31,'Polly','Keston','employee')
+	,(32,'Berry','Beslier',null)
+	,(33,'Kendricks','Aitken','volunteer')
+	,(34,'Fenelia','Hurburt','employee')
+	,(35,'Lucinda','Doorbar','volunteer')
+	,(36,'Ellynn','Sowood','volunteer')
+	,(37,'Hall','Gilkison',null)
+	,(38,'Herbert','Muttock','volunteer')
+	,(39,'Lauretta','Koppeck','volunteer')
+	,(40,'Trudi','Fulger',null)
+	,(41,'Costanza','Drinkhill','volunteer')
+	,(42,'Evonne','Croyser','employee')
+	,(43,'Minne','Ornelas','volunteer')
+	,(44,'August','Ayce','volunteer')
+	,(45,'Siobhan','McComas','volunteer')
+	,(46,'Brigg','Moffet','employee')
+	,(47,'Catarina','Grafhom','volunteer')
+	,(48,'Moishe','Pyson','employee')
+	,(49,'Ardenia','Grigaut','volunteer')
+	,(50,'Chandra','Vlahos','volunteer')
+	;
+
 
 
 
