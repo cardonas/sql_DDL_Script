@@ -21,7 +21,11 @@ create table caller(
 	, caller_phone_number varchar(15) comment 'caller phone number'
 )comment 'Represents a caller';
 
-
+/*
+	AUTHOR: Cash Carlson
+    DATE: 2019-04-12
+    DESCRIPTION: Insert all rows into caller
+*/
 INSERT INTO caller VALUES (1,'Maddi','Measor','other','married','3 Hovde Junction','10517','gay','mmeasor0@sphinn.com','veteran','army','304-456-7318')
 , (2,'Katya','Tansly','female','married','600 Transport Junction','10518','gay','ktansly1@nifty.com','deployed','army','960-118-6142')
 , (3,'Arabelle','Lowensohn','male','single','43722 Reindahl Way','10519','undecided','alowensohn2@ebay.com','active_duty','navy','259-926-7197')

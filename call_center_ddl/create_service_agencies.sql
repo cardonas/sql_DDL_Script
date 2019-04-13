@@ -18,6 +18,8 @@ create table service_agencies(
         references zip_codes(zip_code)
 )comment 'Represents service agencies that get referred';
 
+
+
 /*
 	AUTHOR: Cash Carlson
 	DATE: 2019-04-12
