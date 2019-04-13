@@ -1,11 +1,12 @@
+/*
 -- create the database
 drop database if exists call_center;
 create database call_center;
-
+*/
 use call_center;
 
 -- create the tables
-
+/*
 create table counselor(
 	counselor_id int primary key auto_increment comment 'ID number of counselor'
     , counselor_first_name varchar(200) comment 'First name (given name) of the counselor'
@@ -32,13 +33,14 @@ create table caller(
 		comment 'Identifies which branc of military the caller is in'
 	, caller_phone_number varchar(15) comment 'caller phone number'
 )comment 'Represents a caller';
-
+/*
 create table zip_codes(
 	zip_code varchar(10) primary key comment 'zipcode of caller'
     , city_name varchar(200) not null comment 'Name of city'
     , state varchar(200) not null comment 'State of City'
 )comment 'ZipCode of caller\'s residence';
-
+*/
+/*
 create table calls (
 	call_id int primary key auto_increment comment 'ID number of the caller'
 	, call_date date not null comment 'The date the call too place'
@@ -58,7 +60,8 @@ create table calls (
 		foreign key (caller_id)
         references caller(caller_id)
 )comment 'Represents a call that took place';
-
+*/
+/*
 create table service_agencies(
 	service_agency_id int primary key auto_increment comment 'ID of service agency'
     , service_agency_name varchar(200) not null comment 'Name of service agency'
@@ -70,9 +73,9 @@ create table service_agencies(
 		foreign key (zip_code)
         references zip_codes(zip_code)
 )comment 'Represents service agencies that get referred';
-
+*/
 insert into calls values
-(1,'1-22-2017','2:19:00','7:46:00','morbi non lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non',TRUE,TRUE,TRUE,1,1,6)
+(1,'2017-02-01','2:19:00','7:46:00','morbi non lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non',TRUE,TRUE,TRUE,1,1,6)
 ,(2,'5-1-2018','1:20:00','9:58:00','proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue',TRUE,TRUE,TRUE,2,2,6)
 ,(3,'8-2-2016','3:02:00','6:26:00','praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi',TRUE,FALSE,FALSE,3,3,7)
 ,(4,'9-26-2016','1:23:00','1:35:00','lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum',FALSE,FALSE,FALSE,4,4,5)
